@@ -1,7 +1,9 @@
 This fork currently adds the following functionality to bootstrap:<br>
-Adds margin-top to columns when stacked, and removes the margin top when no longer stacked<br>
-Removes default margin around text elements, and adds a margin-top to text elements only when it follows another text element (such as p+p)<br>
-Breakpoints are stored as variables, so you can add your own media queries according to sm, md, lg, and xl breakpoints.<br>
+<ul>
+<li>Adds margin-top to columns when stacked, and removes the margin top when no longer stacked</li>
+<li>Removes default margin around text elements, and adds a margin-top to text elements only when it follows another text element (such as p+p)</li>
+<li>Breakpoints are stored as variables, so you can add your own media queries according to sm, md, lg, and xl breakpoints.</li>
+<li>Allows you to add flex options through bootstrap like class names via the flexoverrides scss</li>
 
 
 # [Bootstrap](http://getbootstrap.com)
