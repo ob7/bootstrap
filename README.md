@@ -1,4 +1,4 @@
-This currently adds the following functionality to bootstrap:
+This fork currently adds the following functionality to bootstrap:
 Adds margin-top to columns when stacked, and removes the margin top when no longer stacked
 Removes default margin around text elements, and adds a margin-top to text elements only when it follows another text element (such as p+p)
 
