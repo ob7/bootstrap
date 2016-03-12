@@ -1,0 +1,757 @@
+/*begin flex containers*/
+
+/*display as flex*/
+.flex {
+	display: flex;
+}
+.sm-flex {
+	@media only screen and (min-width: $sm-breakpoint) {
+		display: flex;
+	}
+}
+.md-flex {
+	@media only screen and (min-width: $md-breakpoint) {
+		display: flex;
+	}
+}
+.lg-flex {
+	@media only screen and (min-width: $lg-breakpoint) {
+		display: flex;
+	}
+}
+.xl-flex {
+	@media only screen and (min-width: $xl-breakpoint) {
+		display: flex;
+	}
+}
+
+/* set flex direction to row */
+.flex-row {
+	flex-direction: row;
+}
+.sm-flex-row {
+	@media only screen and (min-width: $sm-breakpoint) {
+		flex-direction: row;
+	}
+}
+.md-flex-row {
+	@media only screen and (min-width: $md-breakpoint) {
+		flex-direction: row;
+	}
+}
+.lg-flex-row {
+	@media only screen and (min-width: $lg-breakpoint) {
+		flex-direction: row;
+	}
+}
+.xl-flex-row {
+	@media only screen and (min-width: $xl-breakpoint) {
+		flex-direction: row;
+	}
+}
+
+/* set flex direction to column */
+.flex-column {
+	flex-direction: column;
+}
+.sm-flex-column {
+	@media only screen and (min-width: $sm-breakpoint) {
+		flex-direction: column;
+	}
+}
+.md-flex-column {
+	@media only screen and (min-width: $md-breakpoint) {
+		flex-direction: column;
+	}
+}
+.lg-flex-column {
+	@media only screen and (min-width: $lg-breakpoint) {
+		flex-direction: column;
+	}
+}
+.xl-flex-column {
+	@media only screen and (min-width: $xl-breakpoint) {
+		flex-direction: column;
+	}
+}
+
+/*set flex to wrap*/
+.flex-wrap {
+	flex-wrap: wrap;
+}
+.sm-flex-wrap {
+	@media only screen and (min-width: $sm-breakpoint) {
+		flex-wrap: wrap;
+	}
+}
+.md-flex-wrap {
+	@media only screen and (min-width: $md-breakpoint) {
+		flex-wrap: wrap;
+	}
+}
+.lg-flex-wrap {
+	@media only screen and (min-width: $lg-breakpoint) {
+		flex-wrap: wrap;
+	}
+}
+.xl-flex-wrap {
+	@media only screen and (min-width: $xl-breakpoint) {
+		flex-wrap: wrap;
+	}
+}
+/*set flex to nowrap*/
+.flex-nowrap {
+	flex-wrap: nowrap;
+}
+.sm-flex-nowrap {
+	@media only screen and (min-width: $sm-breakpoint) {
+		flex-wrap: nowrap;
+	}
+}
+.md-flex-nowrap {
+	@media only screen and (min-width: $md-breakpoint) {
+		flex-wrap: nowrap;
+	}
+}
+.lg-flex-nowrap {
+	@media only screen and (min-width: $lg-breakpoint) {
+		flex-wrap: nowrap;
+	}
+}
+.xl-flex-nowrap {
+	@media only screen and (min-width: $xl-breakpoint) {
+		flex-wrap: nowrap;
+	}
+}
+
+/*justify-content: flex-start*/
+.justify-content-start {
+	justify-content: flex-start;
+}
+.sm-justify-content-start {
+	@media only screen and (min-width: $sm-breakpoint) {
+		justify-content: flex-start;
+	}
+}
+.md-justify-content-start {
+	@media only screen and (min-width: $md-breakpoint) {
+		justify-content: flex-start;
+	}
+}
+.lg-justify-content-start {
+	@media only screen and (min-width: $lg-breakpoint) {
+		justify-content: flex-start;
+	}
+}
+.xl-justify-content-start {
+	@media only screen and (min-width: $xl-breakpoint) {
+		justify-content: flex-start;
+	}
+}
+/*justify-content: flex-end*/
+.justify-content-end {
+	justify-content: flex-end;
+}
+.sm-justify-content-end {
+	@media only screen and (min-width: $sm-breakpoint) {
+		justify-content: flex-end;
+	}
+}
+.md-justify-content-end {
+	@media only screen and (min-width: $md-breakpoint) {
+		justify-content: flex-end;
+	}
+}
+.lg-justify-content-end {
+	@media only screen and (min-width: $lg-breakpoint) {
+		justify-content: flex-end;
+	}
+}
+.xl-justify-content-end {
+	@media only screen and (min-width: $xl-breakpoint) {
+		justify-content: flex-end;
+	}
+}
+/*justify-content: center*/
+.justify-content-center {
+	justify-content: center;
+}
+.sm-justify-content-center {
+	@media only screen and (min-width: $sm-breakpoint) {
+		justify-content: center;
+	}
+}
+.md-justify-content-center {
+	@media only screen and (min-width: $md-breakpoint) {
+		justify-content: center;
+	}
+}
+.lg-justify-content-center {
+	@media only screen and (min-width: $lg-breakpoint) {
+		justify-content: center;
+	}
+}
+.xl-justify-content-center {
+	@media only screen and (min-width: $xl-breakpoint) {
+		justify-content: center;
+	}
+}
+/*justify-content: space-between*/
+.justify-content-space-between {
+	justify-content: space-between;
+}
+.sm-justify-content-space-between {
+	@media only screen and (min-width: $sm-breakpoint) {
+		justify-content: space-between;
+	}
+}
+.md-justify-content-space-between {
+	@media only screen and (min-width: $md-breakpoint) {
+		justify-content: space-between;
+	}
+}
+.lg-justify-content-space-between {
+	@media only screen and (min-width: $lg-breakpoint) {
+		justify-content: space-between;
+	}
+}
+.xl-justify-content-space-between {
+	@media only screen and (min-width: $xl-breakpoint) {
+		justify-content: space-between;
+	}
+}
+/*justify-content: space-around*/
+.justify-content-space-around {
+	justify-content: space-around;
+}
+.sm-justify-content-space-around {
+	@media only screen and (min-width: $sm-breakpoint) {
+		justify-content: space-around;
+	}
+}
+.md-justify-content-space-around {
+	@media only screen and (min-width: $md-breakpoint) {
+		justify-content: space-around;
+	}
+}
+.lg-justify-content-space-around {
+	@media only screen and (min-width: $lg-breakpoint) {
+		justify-content: space-around;
+	}
+}
+.xl-justify-content-space-around {
+	@media only screen and (min-width: $xl-breakpoint) {
+		justify-content: space-around;
+	}
+}
+
+/*align-items: flex-start*/
+.align-items-start {
+	align-items: flex-start;
+}
+.sm-align-items-start {
+	@media only screen and (min-width: $sm-breakpoint) {
+		align-items: flex-start;
+	}
+}
+.md-align-items-start {
+	@media only screen and (min-width: $md-breakpoint) {
+		align-items: flex-start;
+	}
+}
+.lg-align-items-start {
+	@media only screen and (min-width: $lg-breakpoint) {
+		align-items: flex-start;
+	}
+}
+.xl-align-items-start {
+	@media only screen and (min-width: $xl-breakpoint) {
+		align-items: flex-start;
+	}
+}
+/*align-items: flex-end*/
+.align-items-end {
+	align-items: flex-end;
+}
+.sm-align-items-end {
+	@media only screen and (min-width: $sm-breakpoint) {
+		align-items: flex-end;
+	}
+}
+.md-align-items-end {
+	@media only screen and (min-width: $md-breakpoint) {
+		align-items: flex-end;
+	}
+}
+.lg-align-items-end {
+	@media only screen and (min-width: $lg-breakpoint) {
+		align-items: flex-end;
+	}
+}
+.xl-align-items-end {
+	@media only screen and (min-width: $xl-breakpoint) {
+		align-items: flex-end;
+	}
+}
+/*align-items: center*/
+.align-items-center {
+	align-items: center;
+}
+.sm-align-items-center {
+	@media only screen and (min-width: $sm-breakpoint) {
+		align-items: center;
+	}
+}
+.md-align-items-center {
+	@media only screen and (min-width: $md-breakpoint) {
+		align-items: center;
+	}
+}
+.lg-align-items-center {
+	@media only screen and (min-width: $lg-breakpoint) {
+		align-items: center;
+	}
+}
+.xl-align-items-center {
+	@media only screen and (min-width: $xl-breakpoint) {
+		align-items: center;
+	}
+}
+/*align-items: baseline*/
+.align-items-baseline {
+	align-items: baseline;
+}
+.sm-align-items-baseline {
+	@media only screen and (min-width: $sm-breakpoint) {
+		align-items: baseline;
+	}
+}
+.md-align-items-baseline {
+	@media only screen and (min-width: $md-breakpoint) {
+		align-items: baseline;
+	}
+}
+.lg-align-items-baseline {
+	@media only screen and (min-width: $lg-breakpoint) {
+		align-items: baseline;
+	}
+}
+.xl-align-items-baseline {
+	@media only screen and (min-width: $xl-breakpoint) {
+		align-items: baseline;
+	}
+}
+/*align-items: stretch*/
+.align-items-stretch {
+	align-items: stretch;
+}
+.sm-align-items-stretch {
+	@media only screen and (min-width: $sm-breakpoint) {
+		align-items: stretch;
+	}
+}
+.md-align-items-stretch {
+	@media only screen and (min-width: $md-breakpoint) {
+		align-items: stretch;
+	}
+}
+.lg-align-items-stretch {
+	@media only screen and (min-width: $lg-breakpoint) {
+		align-items: stretch;
+	}
+}
+.xl-align-items-stretch {
+	@media only screen and (min-width: $xl-breakpoint) {
+		align-items: stretch;
+	}
+}
+
+/*align-content: flex-start*/
+.align-content-start {
+	align-content: flex-start;
+}
+.sm-align-content-start {
+	@media only screen and (min-width: $sm-breakpoint) {
+		align-content: flex-start;
+	}
+}
+.md-align-content-start {
+	@media only screen and (min-width: $md-breakpoint) {
+		align-content: flex-start;
+	}
+}
+.lg-align-content-start {
+	@media only screen and (min-width: $lg-breakpoint) {
+		align-content: flex-start;
+	}
+}
+.xl-align-content-start {
+	@media only screen and (min-width: $xl-breakpoint) {
+		align-content: flex-start;
+	}
+}
+/*align-content: flex-end*/
+.align-content-end {
+	align-content: flex-end;
+}
+.sm-align-content-end {
+	@media only screen and (min-width: $sm-breakpoint) {
+		align-content: flex-end;
+	}
+}
+.md-align-content-end {
+	@media only screen and (min-width: $md-breakpoint) {
+		align-content: flex-end;
+	}
+}
+.lg-align-content-end {
+	@media only screen and (min-width: $lg-breakpoint) {
+		align-content: flex-end;
+	}
+}
+.xl-align-content-end {
+	@media only screen and (min-width: $xl-breakpoint) {
+		align-content: flex-end;
+	}
+}
+/*align-content: center*/
+.align-content-center {
+	align-content: center;
+}
+.sm-align-content-center {
+	@media only screen and (min-width: $sm-breakpoint) {
+		align-content: center;
+	}
+}
+.md-align-content-center {
+	@media only screen and (min-width: $md-breakpoint) {
+		align-content: center;
+	}
+}
+.lg-align-content-center {
+	@media only screen and (min-width: $lg-breakpoint) {
+		align-content: center;
+	}
+}
+.xl-align-content-center {
+	@media only screen and (min-width: $xl-breakpoint) {
+		align-content: center;
+	}
+}
+/*align-content: space-between*/
+.align-content-space-between {
+	align-content: space-between;
+}
+.sm-align-content-space-between {
+	@media only screen and (min-width: $sm-breakpoint) {
+		align-content: space-between;
+	}
+}
+.md-align-content-space-between {
+	@media only screen and (min-width: $md-breakpoint) {
+		align-content: space-between;
+	}
+}
+.lg-align-content-space-between {
+	@media only screen and (min-width: $lg-breakpoint) {
+		align-content: space-between;
+	}
+}
+.xl-align-content-space-between {
+	@media only screen and (min-width: $xl-breakpoint) {
+		align-content: space-between;
+	}
+}
+/*align-content: space-around*/
+.align-content-space-around {
+	align-content: space-around;
+}
+.sm-align-content-space-around {
+	@media only screen and (min-width: $sm-breakpoint) {
+		align-content: space-around;
+	}
+}
+.md-align-content-space-around {
+	@media only screen and (min-width: $md-breakpoint) {
+		align-content: space-around;
+	}
+}
+.lg-align-content-space-around {
+	@media only screen and (min-width: $lg-breakpoint) {
+		align-content: space-around;
+	}
+}
+.xl-align-content-space-around {
+	@media only screen and (min-width: $xl-breakpoint) {
+		align-content: space-around;
+	}
+}
+/*align-content: stretch*/
+.align-content-stretch {
+	align-content: stretch;
+}
+.sm-align-content-stretch {
+	@media only screen and (min-width: $sm-breakpoint) {
+		align-content: stretch;
+	}
+}
+.md-align-content-stretch {
+	@media only screen and (min-width: $md-breakpoint) {
+		align-content: stretch;
+	}
+}
+.lg-align-content-stretch {
+	@media only screen and (min-width: $lg-breakpoint) {
+		align-content: stretch;
+	}
+}
+.xl-align-content-stretch {
+	@media only screen and (min-width: $xl-breakpoint) {
+		align-content: stretch;
+	}
+}
+
+
+/*begin flex items*/
+
+/*flex order*/
+.order-0 {
+	order: 0;
+}
+.sm-order-0 {
+	@media only screen and (min-width: $sm-breakpoint) {
+		order: 0;
+	}
+}
+.md-order-0 {
+	@media only screen and (min-width: $md-breakpoint) {
+		order: 0;
+	}
+}
+.lg-order-0 {
+	@media only screen and (min-width: $lg-breakpoint) {
+		order: 0;
+	}
+}
+.xl-order-0 {
+	@media only screen and (min-width: $xl-breakpoint) {
+		order: 0;
+	}
+}
+
+.order-1 {
+	order: 1;
+}
+.sm-order-1 {
+	@media only screen and (min-width: $sm-breakpoint) {
+		order: 1;
+	}
+}
+.md-order-1 {
+	@media only screen and (min-width: $md-breakpoint) {
+		order: 1;
+	}
+}
+.lg-order-1 {
+	@media only screen and (min-width: $lg-breakpoint) {
+		order: 1;
+	}
+}
+.xl-order-1 {
+	@media only screen and (min-width: $xl-breakpoint) {
+		order: 1;
+	}
+}
+
+.order-2 {
+	order: 2;
+}
+.sm-order-2 {
+	@media only screen and (min-width: $sm-breakpoint) {
+		order: 2;
+	}
+}
+.md-order-2 {
+	@media only screen and (min-width: $md-breakpoint) {
+		order: 2;
+	}
+}
+.lg-order-2 {
+	@media only screen and (min-width: $lg-breakpoint) {
+		order: 2;
+	}
+}
+.xl-order-2 {
+	@media only screen and (min-width: $xl-breakpoint) {
+		order: 2;
+	}
+}
+
+.order-2 {
+	order: 2;
+}
+.sm-order-2 {
+	@media only screen and (min-width: $sm-breakpoint) {
+		order: 2;
+	}
+}
+.md-order-2 {
+	@media only screen and (min-width: $md-breakpoint) {
+		order: 2;
+	}
+}
+.lg-order-2 {
+	@media only screen and (min-width: $lg-breakpoint) {
+		order: 2;
+	}
+}
+.xl-order-2 {
+	@media only screen and (min-width: $xl-breakpoint) {
+		order: 2;
+	}
+}
+
+/*align self auto*/
+.align-self-auto {
+	align-self: auto;
+}
+.sm-align-self-auto {
+	@media only screen and (min-width: $sm-breakpoint) {
+		align-self: auto;
+	}
+}
+.md-align-self-auto {
+	@media only screen and (min-width: $md-breakpoint) {
+		align-self: auto;
+	}
+}
+.lg-align-self-auto {
+	@media only screen and (min-width: $lg-breakpoint) {
+		align-self: auto;
+	}
+}
+.xl-align-self-auto {
+	@media only screen and (min-width: $xl-breakpoint) {
+		align-self: auto;
+	}
+}
+/*align self flex-start*/
+.align-self-start {
+	align-self: flex-start;
+}
+.sm-align-self-start {
+	@media only screen and (min-width: $sm-breakpoint) {
+		align-self: flex-start;
+	}
+}
+.md-align-self-start {
+	@media only screen and (min-width: $md-breakpoint) {
+		align-self: flex-start;
+	}
+}
+.lg-align-self-start {
+	@media only screen and (min-width: $lg-breakpoint) {
+		align-self: flex-start;
+	}
+}
+.xl-align-self-start {
+	@media only screen and (min-width: $xl-breakpoint) {
+		align-self: flex-start;
+	}
+}
+/*align self flex-end*/
+.align-self-end {
+	align-self: flex-end;
+}
+.sm-align-self-end {
+	@media only screen and (min-width: $sm-breakpoint) {
+		align-self: flex-end;
+	}
+}
+.md-align-self-end {
+	@media only screen and (min-width: $md-breakpoint) {
+		align-self: flex-end;
+	}
+}
+.lg-align-self-end {
+	@media only screen and (min-width: $lg-breakpoint) {
+		align-self: flex-end;
+	}
+}
+.xl-align-self-end {
+	@media only screen and (min-width: $xl-breakpoint) {
+		align-self: flex-end;
+	}
+}
+/*align self center*/
+.align-self-center {
+	align-self: center;
+}
+.sm-align-self-center {
+	@media only screen and (min-width: $sm-breakpoint) {
+		align-self: center;
+	}
+}
+.md-align-self-center {
+	@media only screen and (min-width: $md-breakpoint) {
+		align-self: center;
+	}
+}
+.lg-align-self-center {
+	@media only screen and (min-width: $lg-breakpoint) {
+		align-self: center;
+	}
+}
+.xl-align-self-center {
+	@media only screen and (min-width: $xl-breakpoint) {
+		align-self: center;
+	}
+}
+/*align self baseline*/
+.align-self-baseline {
+	align-self: baseline;
+}
+.sm-align-self-baseline {
+	@media only screen and (min-width: $sm-breakpoint) {
+		align-self: baseline;
+	}
+}
+.md-align-self-baseline {
+	@media only screen and (min-width: $md-breakpoint) {
+		align-self: baseline;
+	}
+}
+.lg-align-self-baseline {
+	@media only screen and (min-width: $lg-breakpoint) {
+		align-self: baseline;
+	}
+}
+.xl-align-self-baseline {
+	@media only screen and (min-width: $xl-breakpoint) {
+		align-self: baseline;
+	}
+}
+/*align self stretch*/
+.align-self-stretch {
+	align-self: stretch;
+}
+.sm-align-self-stretch {
+	@media only screen and (min-width: $sm-breakpoint) {
+		align-self: stretch;
+	}
+}
+.md-align-self-stretch {
+	@media only screen and (min-width: $md-breakpoint) {
+		align-self: stretch;
+	}
+}
+.lg-align-self-stretch {
+	@media only screen and (min-width: $lg-breakpoint) {
+		align-self: stretch;
+	}
+}
+.xl-align-self-stretch {
+	@media only screen and (min-width: $xl-breakpoint) {
+		align-self: stretch;
+	}
+}
