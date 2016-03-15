@@ -128,7 +128,7 @@ $grid-breakpoints: (
   // Large screen / desktop
   lg: 992px,
   // Extra large screen / wide desktop
-  xl: 1348px
+  xl: 1280px
 ) !default;
 
 @include _assert-ascending($grid-breakpoints, "$grid-breakpoints");

@@ -13,7 +13,7 @@ ul {
 }
 
 /*text element +tops*/
-a+a,
+/*a+a,*/
 a+h1,
 a+h2,
 a+h3,
@@ -113,3 +113,15 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+
+.mobile {
+	@media only screen and (min-width: $lg-breakpoint) {
+		display: none !important;
+	}
+}
+.desktop {
+	display: none;
+	@media only screen and (min-width: $lg-breakpoint) {
+		display: initial !important;
+	}
+}	
