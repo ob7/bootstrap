@@ -119,12 +119,18 @@ $link-hover-decoration: underline !default;
 // adapting to different screen sizes, for use in media queries.
 
 $grid-breakpoints: (
+  // Extra small screen / phone
   xs: 0,
+  // Small screen / phone
   sm: 544px,
+  // Medium screen / tablet
   md: 768px,
+  // Large screen / desktop
   lg: 992px,
-  xl: 1200px
+  // Extra large screen / wide desktop
+  xl: 1348px
 ) !default;
+
 @include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
 
 
@@ -132,12 +138,21 @@ $grid-breakpoints: (
 //
 // Define the maximum width of `.container` for different screen sizes.
 
+$xxsm-breakpoint: 240px;
+$xsm-breakpoint: 380px;
+$sm-breakpoint: 576px;
+$md-breakpoint: 720px;
+$lg-breakpoint: 940px;
+$xl-breakpoint: 1280px;
+$xxl-breakpoint: 1440px;
+$xxxl-breakpoint: 1680px;
 $container-max-widths: (
-  sm: 576px,
-  md: 720px,
-  lg: 940px,
-  xl: 1140px
+  sm: $sm-breakpoint,
+  md: $md-breakpoint,
+  lg: $lg-breakpoint,
+  xl: $xl-breakpoint
 ) !default;
+
 @include _assert-ascending($container-max-widths, "$container-max-widths");
 
 
