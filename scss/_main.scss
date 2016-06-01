@@ -1,7 +1,186 @@
 /* Custom styles that are loaded last to override anything in bootstrap */
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,500,600,700,400italic,500italic,600italic,700italic');
+@import url('../vendor/icomoon/style.css');
+$mainFont: 'Cabin', sans-serif;
 $alphaBlack: rgba(0,0,0,0.7);
 $alphaWhite: rgba(255,255,255,0.3);
 $mainShadow: 0 0 $spacer $alphaBlack;
 $mainTransition: all .25s ease-in-out;
+$mainRed: #8f162e;
+$mainRedAlt: #780C1E;
+$darkRed: #660919;
+$mainOrange: #9a572a;
+$mainOrangeAlt:#b88d58;
+$secondaryOrange: #b88d58;
+$secondaryOrangeAlt: #804119;
+$secondaryOrangeHover: #94793B;
+$mainGreen: #517c58;
+$mainGreenAlt: #73B07C;
+$secondaryGreen: #3C6044;
+$lightRed: #b98078;
+$gray: #B88078;
+$brown: #93572a;
+$tan: #d8c3ac;
 body {
+	.ccm-page {
+		h1 {
+			font-style: italic;
+		}
+		.negative-padding {
+			@media only screen and (min-width: $xl-breakpoint) {
+				margin-top: -16px;
+				margin-bottom: -16px;
+			}
+		}
+		.thin-container {
+			max-width: 500px;
+			margin: 0 auto;
+		}
+		a {
+			transition: $mainTransition;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+		font-family: $mainFont;
+		.area {
+			padding: 16px;
+			color: #FFF;
+		}
+		.tan-area {
+			background: $tan;
+			color: #000;
+		}
+		.brown-area {
+			background: $brown;
+		}
+		.red-area {
+			background: $mainRed;
+		}
+		.light-green-area {
+			background: $mainGreenAlt;
+		}
+		.green-area {
+			background: $mainGreen;
+		}
+		footer {
+			padding: 16px 0;
+			border-top: 1px solid #FFF;
+			background: $mainRed;
+			.ccm-block-page-list-pages {
+				@media only screen and (min-width: $lg-breakpoint) {
+					display: flex;
+					flex-direction: row;
+					flex-wrap: wrap;
+					justify-content: space-around;
+					align-items: center;
+				}
+			}
+			color: #FFF;
+			a {
+				color: #FFF;
+				&:hover {
+					color: $secondaryOrange;
+				}
+			}
+			.copyright {
+				color: $gray;
+				a {
+					color: $gray;
+				}
+			}
+			.sponsors {
+				text-align: center;
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: space-around;
+				align-items: center;
+				a {
+					display: inline-block;
+					padding: 0 8px;
+				}
+			}
+		}
+		header {
+			background: $mainRed;
+			nav {
+				.nav-container {
+					width: 100%;
+					max-width: 1280px;
+					margin: 0 auto;
+				}
+				ul {
+					display: flex;
+					flex-direction: row;
+					flex-wrap: wrap;
+					padding: 0;
+					margin: 0;
+					li {
+						flex: 1 0 auto;
+						display: flex;
+						position: relative;
+						&:hover {
+							ul {
+								max-height: 500px;
+							}
+						}
+						ul {
+							display: none;
+							transition: $mainTransition;
+							@media only screen and (min-width: $lg-breakpoint) {
+								display: block;
+								position: absolute;
+								top: 62px;
+								min-width: 200px;
+								z-index: 5;
+								left: 0;
+								max-height: 0;
+								overflow: hidden;
+								li {
+									a {
+										background-color: $mainOrange;
+										text-align: left;
+										&:hover {
+											background-color: $mainOrangeAlt;
+										}
+									}
+								}
+							}
+						}
+						&::before {
+							display: none !important;
+						}
+						a {
+							width: 100%;
+							text-align: center;
+							padding :16px;
+							color: #FFF;
+							font-size: 20px;
+							display: block;
+							&:hover {
+								background-color: $mainOrange;
+							}
+							&.icon {
+								@media only screen and (min-width: $xl-breakpoint) {
+									background-color: $mainOrangeAlt;
+								}
+								font-size: 36px;
+								padding: 13px;
+								&:hover {
+									background-color: $secondaryOrangeHover;
+								}
+							}
+							&.green-nav-item {
+								background-color: $mainGreen;
+								&:hover {
+									background-color: $mainGreenAlt;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }

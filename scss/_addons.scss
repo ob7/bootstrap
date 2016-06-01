@@ -118,6 +118,11 @@ ul+ul {
 }
 
 /*none text elements +tops*/
+h1+.row,
+h2+.row,
+h3+.row,
+h4+.row,
+h5+.row,
 .row+.row,
 div[class^="col-xs-"]+div[class^="col-xs-"], /* adds margin-top to any stacked columns */
 div[class*="col-xs-"]+div[class*="col-xs-"] {
