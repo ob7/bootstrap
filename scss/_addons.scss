@@ -6,9 +6,7 @@ h4,
 h5,
 h6,
 img,
-li,
-p,
-ul {
+p {
 	margin: 0;
 	padding: 0;
 }
@@ -117,16 +115,41 @@ ul+ul {
 	margin-top: $spacer;
 }
 
+h4+.ccm-block-page-list-wrapper,
+p+.ccm-block-next-previous-wrapper,
+{
+	margin-top: 16px;
+}
 /*none text elements +tops*/
+div+h1,
+h1+div,
+p+.ccm-custom-style-container,
+h1+.ccm-custom-style-container,
+h2+.ccm-custom-style-container,
+h3+.ccm-custom-style-container,
+h4+.ccm-custom-style-container,
+h5+.ccm-custom-style-container,
+h6+.ccm-custom-style-container,
+.ccm-custom-style-container+.ccm-custom-style-container,
+.ccm-custom-style-container+.row,
+.ccm-image-slider-container+.row,
+.row+.ccm-custom-style-container,
+.row+p,
+picture+.row,
+p+.row,
 h1+.row,
 h2+.row,
 h3+.row,
 h4+.row,
 h5+.row,
 .row+.row,
+section+.row,
 div[class^="col-xs-"]+div[class^="col-xs-"], /* adds margin-top to any stacked columns */
 div[class*="col-xs-"]+div[class*="col-xs-"] {
 	margin-top: $spacer;
+	@media only screen and (min-width: $lg-breakpoint) {
+		margin-top: $spacer * 2;
+	}
 }
 /*removes +tops for bootstrap columns when not stacked*/
 div[class*="col-xs-"]+div[class^="col-sm-"], div[class*="col-xs-"]+div[class*="col-sm-"] {
