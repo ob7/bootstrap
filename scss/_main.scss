@@ -1,51 +1,50 @@
 /* Custom styles that are loaded last to override anything in bootstrap */
 @import url('https://fonts.googleapis.com/css?family=Droid+Sans:400,700');
-$mainFont: 'Droid Sans', sans-serif; @import url('../vendor/icomoon/style.css');
+$mainFont: 'Droid Sans', sans-serif;
+
+@import url('../vendor/icomoon/style.css');
 
 $alphaBlack: rgba(0,0,0,0.7);
 $alphaWhite: rgba(255,255,255,0.3);
-$alphaWhiter: rgba(255,255,255,0.75);
+$alphaWhiter: rgba(255,255,255,0.7);
 
 $mainShadow: 0 0 $spacer $alphaBlack;
 $mainTransition: all .25s ease-in-out;
 
-$darkBlue: #003e6a;
-$mediumBlue: #005b89;
-$lightBlue: #00a2e3;
-$orange: #f78023;
-$orangeAlt: #E57620;
-$green: #27ec62;
-
 body {
 	.ccm-page {
+		background: #000;
 		font-family: $mainFont;
 		span {
 			font-family: $mainFont;
 		}
 		min-height: 100vh;
-		a {
-		}
 		hr {
 			clear: both;
 		}
 		main {
-			.ccm-block-page-list-wrapper {
-				.ccm-block-page-list-pages {
-					.ccm-block-page-list-page-entry {
-						.ccm-block-page-list-page-entry-text {
-							.ccm-block-page-list-title {
+		}
+		footer {
+		}
+		header {
+			nav {
+				ul {
+					li {
+						a {
+              &:hover {
+              }
+						}
+						ul {
+							li {
 								a {
+									&:hover {
+									}
 								}
 							}
 						}
 					}
 				}
 			}
-			padding: 16px;
-		}
-		footer {
-		}
-		header {
 		}
 	}
 }

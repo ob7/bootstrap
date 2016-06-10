@@ -132,10 +132,12 @@ h5+.ccm-custom-style-container,
 h6+.ccm-custom-style-container,
 .ccm-custom-style-container+.ccm-custom-style-container,
 .ccm-custom-style-container+.row,
+.ccm-custom-style-container+h3,
 .ccm-image-slider-container+.row,
 .row+.ccm-custom-style-container,
 .row+p,
 picture+.row,
+picture+p,
 p+.row,
 h1+.row,
 h2+.row,
@@ -147,9 +149,6 @@ section+.row,
 div[class^="col-xs-"]+div[class^="col-xs-"], /* adds margin-top to any stacked columns */
 div[class*="col-xs-"]+div[class*="col-xs-"] {
 	margin-top: $spacer;
-	@media only screen and (min-width: $lg-breakpoint) {
-		margin-top: $spacer * 2;
-	}
 }
 /*removes +tops for bootstrap columns when not stacked*/
 div[class*="col-xs-"]+div[class^="col-sm-"], div[class*="col-xs-"]+div[class*="col-sm-"] {
