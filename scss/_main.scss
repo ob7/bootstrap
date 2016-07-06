@@ -1,50 +1,469 @@
-/* Custom styles that are loaded last to override anything in bootstrap */
-@import url('https://fonts.googleapis.com/css?family=Droid+Sans:400,700');
-$mainFont: 'Droid Sans', sans-serif;
-
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,900italic,900,800italic,800,700italic,700,600,600italic,500italic,500,400italic,300italic,300,200,200italic,100italic,100);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Righteous);
 @import url('../vendor/icomoon/style.css');
 
-$alphaBlack: rgba(0,0,0,0.7);
-$alphaWhite: rgba(255,255,255,0.3);
-$alphaWhiter: rgba(255,255,255,0.7);
+$mainFont: 'Raleway', sans-serif;
+$secondaryFont: 'Montserrat', sans-serif;
+$thirdFont: 'Righteous', cursive;
 
-$mainShadow: 0 0 $spacer $alphaBlack;
-$mainTransition: all .25s ease-in-out;
+$alphaBlack: rgba(0,0,0,0.5);
+$alphaMidBlack: rgba(0,0,0,0.67);
+$alphaBlacker: rgba(0,0,0,0.75);
+$alphaWhite: rgba(255,255,255,0.5);
+$alphaSuperWhite: rgba(255,255,255,0.11);
+$borderRadius: 16px;
 
+$darkGreen: #00180F;
+$lightGreen: #012F0D;
+$yellow: #ffc;
+$yellow2: #ffe75c;
+$red: #d00;
+$green: #0c0;
+$green2: #006E16;
+$green3: #03960C;
+
+$green4: #001300;
+$green5: #003407;
+
+$green6: #060;
+$red2: #600;
+
+$white1: #fbf5e5;
+$white2: #ceccaf;
+$grey: #ccc;
+$grey2: #a7a499;
+$darkGrey: #8d8e71;
+$white3: #faf6e3;
+$arial: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$blue: #0000FF;
 body {
-	.ccm-page {
-		background: #000;
-		font-family: $mainFont;
-		span {
-			font-family: $mainFont;
-		}
-		min-height: 100vh;
-		hr {
-			clear: both;
-		}
-		main {
-		}
-		footer {
-		}
-		header {
-			nav {
-				ul {
-					li {
-						a {
-              &:hover {
-              }
-						}
-						ul {
-							li {
-								a {
-									&:hover {
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
+  .ccm-page {
+	  /*p,ul,li,span {*/
+		  /*font-family: $arial;*/
+	  /*}*/
+	  .edge-box {
+		  background-image: url('../img/edge.png');
+		  background-size: 100% 100%;
+		  background-repeat: no-repeat;
+		  padding: 32px 22px;
+		  color: #000;
+		  @media only screen and (min-width: $xl-breakpoint) {
+			  margin-top: -32px;
+		  }
+	  }
+	  .specials-container {
+		  display: flex;
+		  flex-direction: column;
+		  flex: 1;
+		  @include gradient-x-three-colors($green2, $green3, 50%, $green2);
+		  padding: 8px;
+		  border-radius: 16px;
+		  .content-area {
+			  color: #000;
+			  font-family: $arial;
+			  flex: 1;
+			  padding: 8px;
+			  margin-top: 8px;
+			  border-radius: 0 0 16px 16px;
+			  @include gradient-y($grey2, $white3);
+			  display: flex;
+			  flex-direction: column;
+			  justify-content: space-between;
+			  p,h1,h2,h3,h4,h5,h6 {
+				  font-family: $arial;
+			  }
+		  }
+		  h3 {
+			  font-family: $secondaryFont !important;
+			  display: block;
+			  color: #000;
+			  text-align: center;
+			  text-transform: uppercase;
+		  }
+	  }
+	  padding-bottom: 16px;
+	  .ccm-block-page-list-pages {
+		  display: flex;
+		  flex-direction: row;
+		  flex-wrap: wrap;
+		  align-items: center;
+		  justify-content: space-around;
+		  .ccm-block-page-list-page-entry-horizontal {
+			  max-width: 200px;
+			  display: flex;
+			  flex-direction: column;
+		  }
+		  .ccm-block-page-list-page-entry-text {
+			  margin: 0;
+			  padding: 0;
+			  a {
+				  display: block;
+				  text-align: center;
+			  }
+		  }
+		  .ccm-block-page-list-page-entry-thumbnail {
+			  width: 100%;
+			  img {
+				  width: 100% !important;
+			  }
+		  }
+	  }
+	  min-height: 100vh;
+	  @include gradient-y($darkGreen, $lightGreen);
+	  .white-box {
+		  padding: 32px;
+		  background: #FFF;
+		  h4 {
+			  a {
+				  color: $blue !important;
+			  }
+		  }
+	  }
+	  blockquote {
+		  padding-left: 16px;
+		  border-left: 1px solid $grey;
+	  }
+	  .green-box {
+		  @include gradient-y($green4,$green5);
+		  border: 3px solid #000;
+		  padding: 16px;
+		  color: #FFF;
+		  a {
+			  color: #FFF !important;
+		  }
+	  }
+	  .green-h4 {
+		  font-size: 24px;
+		  color: $green6;
+		  font-weight:700;
+		  font-family: $secondaryFont;
+	  }
+	  .red-h4 {
+		  font-size: 24px;
+		  color: $red2;
+		  font-weight:700;
+		  font-family: $secondaryFont;
+	  }
+	  footer {
+		  nav {
+			  margin-top: 0;
+			  &::after {
+				  content: '';
+				  position: absolute;
+				  top: -32px;
+				  right: 0;
+				  width: 0;
+				  height: 0;
+				  border-style: solid;
+				  border-width: 32px 0 0 16px;
+				  border-color: transparent transparent transparent $green3;
+			  }
+			  &::before {
+				  content: '';
+				  position: absolute;
+				  top: -32px;
+				  left: 0;
+				  width: 0;
+				  height: 0;
+				  border-style: solid;
+				  border-width: 0 0 32px 16px;
+				  border-color: transparent transparent $green3 transparent;
+			  }
+			  padding: 8px 4px;
+		  }
+	  }
+	  main {
+		  .content {
+			  a {
+				  color: $red;
+				  &:hover {
+					  text-decoration: underline;
+				  }
+			  }
+			  h5 {
+				  color: $red;
+			  }
+			  color: #000;
+			  background: #FFF;
+			  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/$white1+41,fff000+100 */
+			  background: $white1; /* Old browsers */
+			  background: -moz-linear-gradient(top,  $white1 41%, $white2 100%); /* FF3.6-15 */
+			  background: -webkit-linear-gradient(top,  $white1 41%,$white2 100%); /* Chrome10-25,Safari5.1-6 */
+			  background: linear-gradient(to bottom,  $white1 41%,$white2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$white1', endColorstr='$white2',GradientType=0 ); /* IE6-9 */
+			  &.transparent {
+				  background: transparent;
+				  color: #FFF;
+			  }
+			  .announcements {
+				  /*color: #FFF;*/
+				  /*h1,h2,h3,h4,h5,h6,p {*/
+					  /*color: #FFF;*/
+				  /*}*/
+			  }
+			  &.blog {
+				  .ccm-block-next-previous-wrapper {
+					  display: flex;
+					  flex-direction: row;
+					  justify-content: space-between;
+					  align-items: center;
+					  .ccm-block-next-previous-header {
+						  display: none;
+						  h5 {
+						  }
+					  }
+					  p.ccm-block-next-previous-previous-link {
+						  margin-top: 0;
+						  &:before {
+							  padding-right: 8px;
+							  content: 'Prev';
+						  }
+						  a {
+						  }
+					  }
+					  .ccm-block-next-previous-header {
+						  display: none;
+						  h5 {
+						  }
+					  }
+					  p.ccm-block-next-previous-next-link {
+						  margin-top: 0;
+						  &:after {
+							  padding-left: 8px;
+							  content: 'Next';
+						  }
+						  a {
+						  }
+					  }
+				  }
+				  ul.pagination {
+					  background: $darkGreen;
+					  list-style: none;
+					  margin: 0;
+					  padding: 0;
+					  display: flex;
+					  flex-direction: row;
+					  justify-content: space-between;
+					  align-items: center;
+					  li {
+						  &.prev {
+							  background: $green2;
+							  border-radius: 4px 0 0 4px;
+							  padding: 4px;
+							  span, a {
+								  color: #FFF;
+							  }
+							  &.disabled {
+								  span {
+									  color: $darkGreen;
+								  }
+							  }
+						  }
+						  &.next {
+							  background: $green2;
+							  border-radius: 0 4px 4px 0;
+							  padding: 4px;
+							  span, a {
+								  color: #FFF;
+							  }
+						  }
+						  display: inline-block;
+					  }
+				  }
+				  padding: 32px 0;
+				  .ccm-block-page-list-pages {
+					  margin-top: 16px;
+					  display: block;
+					  .ccm-block-page-list-title {
+						  a {
+							  color: #FFF;
+							  font-size: 20px;
+							  text-align: left;
+							  line-height: 1.2;
+							  &:hover{
+								  color: $yellow2;
+								  text-decoration: none;
+							  }
+						  }
+					  }
+					  .ccm-block-page-list-date {
+						  margin-top: 0;
+					  }
+				  }
+				  .upper {
+					  h1,h2,h3,h4,h5 {
+						  font-family: $arial;
+						  color: $yellow2;
+					  }
+					  p {
+						  color: #FFF;
+					  }
+					  h1 {
+						  @media only screen and (min-width: $lg-breakpoint) {
+							  font-size: 45px;
+						  }
+					  }
+					  h3 {
+						  font-size: 30px;
+					  }
+				  }
+			  }
+			  margin: 0 16px;
+			  padding: 16px;
+			  @media only screen and (min-width: $lg-breakpoint) {
+				  padding: 32px 16px;
+			  }
+		  }
+	  }
+	  .grey-button {
+		  a {
+			  display: block;
+			  border-radius: 8px;
+			  font-family: $thirdFont;
+			  font-size: 24px;
+			  padding: 4px;
+			  color: #000 !important;
+			  text-transform: uppercase;
+			  @include gradient-y($darkGrey, $white2);
+			  &:hover {
+				  color: $green2 !important;
+				  text-decoration: none !important;
+			  }
+		  }
+	  }
+	  h1.landing-header {
+		  @media only screen and (min-width: $lg-breakpoint) {
+			  display: block;
+			  margin-top: -32px;
+		  }
+	  }
+	  .col-sm-3 {
+		  @media only screen and (min-width: $sm-breakpoint) {
+			  width: 100%;
+			  max-width: 100%;
+		  }
+		  @media only screen and (min-width: $lg-breakpoint) {
+			  width: 25%;
+		  }
+	  }
+	  header {
+		  &.landing {
+			  h2 {
+				  display: inline-block;
+				  padding: 8px 16px;
+				  @include gradient-x-three-colors(transparent, #FFF, 50%, transparent);
+			  }
+			  nav {
+				  @media only screen and (min-width: $xl-breakpoint) {
+					  ul {
+						  margin: 0 24px;
+						  li {
+							  a {
+								  display: block;
+								  min-width: 274px;
+							  }
+						  }
+					  }
+				  }
+				  a {
+					  font-size: 24px;
+					  text-transform: uppercase;
+					  font-weight: 900;
+					  text-shadow: 0 0 .25em #FFF;
+				  }
+			  }
+		  }
+		  padding: 16px 0 0;
+		  text-align: center;
+		  h4 {
+			  color: $yellow;
+			  @media only screen and (min-width: $lg-breakpoint) {
+				  font-size: 30px;
+			  }
+		  }
+		  h1 {
+			  color: $green;
+			  font-weight: 800;
+			  @media only screen and (min-width: $lg-breakpoint) {
+				  font-size: 40px;
+			  }
+			  a {
+				  color: $yellow;
+				  display: block;
+				  @media only screen and (min-width: $lg-breakpoint) {
+					  display: inline-block;
+				  }
+			  }
+		  }
+		  h2 {
+			  font-family: $mainFont;
+			  font-weight: 800;
+			  color: $red;
+		  }
+	  }
+	  nav {
+		  &::before {
+			  content: '';
+			  position: absolute;
+			  bottom: -24px;
+			  left: 0;
+			  width: 0;
+			  height: 0;
+			  border-style: solid;
+			  border-width: 0 16px 24px 0;
+			  border-color: transparent $green3 transparent transparent;
+
+		  }
+		  &::after {
+			  content: '';
+			  position: absolute;
+			  bottom: -24px;
+			  right: 0;
+			  width: 0;
+			  height: 0;
+			  border-style: solid;
+			  border-width: 24px 16px 0 0;
+			  border-color: $green3 transparent transparent transparent;
+		  }
+		  &::before,&::after {
+			  display: none;
+		  }
+		  @include gradient-x-three-colors($green2, $green3, 50%, $green2);
+		  margin-top: 16px;
+		  padding: 8px 4px;
+		  ul {
+			  @media only screen and (min-width: $lg-breakpoint) {
+				  display: flex;
+				  flex-direction: row;
+				  justify-content: space-around;
+				  align-items: center;
+			  }
+		  }
+		  a {
+			  color: #000;
+			  font-weight: 700;
+			  text-shadow: 0 0 .5em #FFF;
+			  &:hover, &.nav-path-selected {
+				  color: #FFF;
+			  }
+		  }
+	  }
+	  h1,h2,h3,h4,h5 {
+		  font-family: $secondaryFont;
+	  }
+	  h4 {
+		  font-family: $thirdFont;
+	  }
+	  p,a,ul,li,span {
+		  font-family: $arial;
+	  }
+	  .hr {
+		  margin: 32px 0;
+		  margin-left: -32px;
+		  margin-right: -32px;
+		  height: 2px;
+		  @include gradient-x-three-colors($green2, $green3, 50%, $green2);
+	  }
+  }
 }

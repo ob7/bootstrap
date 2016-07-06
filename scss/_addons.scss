@@ -22,6 +22,7 @@ a+h6,
 a+img,
 a+p,
 a+ul,
+blockquote+h1,
 h1+a,
 h1+h1,
 h1+h2,
@@ -43,6 +44,7 @@ h2+img,
 h2+p,
 h2+ul,
 h3+a,
+h3+blockquote,
 h3+h1,
 h3+h2,
 h3+h3,
@@ -93,6 +95,7 @@ img+img,
 img+p,
 img+ul,
 p+a,
+p+blockquote,
 p+h1,
 p+h2,
 p+h3,
@@ -102,6 +105,7 @@ p+h6,
 p+img,
 p+p,
 p+ul,
+picture+picture,
 ul+a,
 ul+h1,
 ul+h2,
@@ -126,6 +130,7 @@ h1+div,
 p+.ccm-custom-style-container,
 h1+.ccm-custom-style-container,
 h2+.ccm-custom-style-container,
+h2+.ccm-block-page-list-wrapper,
 h3+.ccm-custom-style-container,
 h4+.ccm-custom-style-container,
 h5+.ccm-custom-style-container,
@@ -135,6 +140,8 @@ h6+.ccm-custom-style-container,
 .ccm-custom-style-container+h3,
 .ccm-image-slider-container+.row,
 .row+.ccm-custom-style-container,
+.ccm-custom-style-container+p,
+.ccm-block-page-list-wrapper+div,
 .row+p,
 picture+.row,
 picture+p,
@@ -144,11 +151,16 @@ h2+.row,
 h3+.row,
 h4+.row,
 h5+.row,
+.row+h4,
 .row+.row,
 section+.row,
+div+p,
 div[class^="col-xs-"]+div[class^="col-xs-"], /* adds margin-top to any stacked columns */
 div[class*="col-xs-"]+div[class*="col-xs-"] {
 	margin-top: $spacer;
+  @media only screen and (min-width: $md-breakpoint) {
+    margin-top: 32px;
+  }
 }
 /*removes +tops for bootstrap columns when not stacked*/
 div[class*="col-xs-"]+div[class^="col-sm-"], div[class*="col-xs-"]+div[class*="col-sm-"] {
@@ -189,3 +201,12 @@ img {
 		display: initial !important;
 	}
 }	
+.hover {
+	&:hover {
+		cursor: hand;
+		cursor: pointer;
+	}
+}
+picture {
+	/*display: inline-block;*/
+}
